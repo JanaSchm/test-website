@@ -1,0 +1,1559 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: sans-serif;
+}
+
+
+
+/* ==========================================================================
+                                Cookie Banner
+   ========================================================================== */
+
+  #consent-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+  
+    background-color: rgb(26, 23, 27);
+  }
+
+  #consent-popup.hidden {
+      /* opacity: 0; */
+      /* position:absolute; */
+      /* z-index:-1; */
+      display: none;
+  }
+  
+  .cookie-consent-banner__inner {     
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  
+  .cookie-consent-banner__copy { 
+    margin-bottom: 16px;
+  }
+  
+  .cookie-consent-banner__header {
+    margin-bottom: 8px;
+    
+    font-family: "CeraPRO-Bold", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+  
+  .cookie-consent-banner__description {
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    color: #838F93;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .cookie-consent-banner__cta {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 164px;
+    padding: 11px 13px;
+      
+    border-radius: 2px;
+    
+    background-color: rgb(250, 147, 41);
+     
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  /* .cookie-consent-banner__cta--secondary { 
+    padding: 9px 13px;
+    
+    border: 2px solid #3A4649;
+    
+    background-color: transparent;
+    
+    color: rgb(250, 147, 41);
+  } */
+  
+  .cookie-consent-banner__cta:hover {
+    background-color: rgb(250, 147, 41);
+  }
+  
+  /* .cookie-consent-banner__cta--secondary:hover {
+    border-color: #838F93;
+      
+    background-color: transparent;
+    
+    color: rgb(250, 147, 41);
+  } */
+  
+  .cookie-consent-banner__cta:last-child {
+    margin-left: 16px;
+  }
+
+  .cookie-consent-banner__copy a {
+      color: inherit;
+  }
+
+
+
+/* ==========================================================================
+                                NAVIGATION
+   ========================================================================== */
+
+nav {
+    display: flex;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 30vw;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(26, 23, 27);
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(250, 147, 41);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    nav {
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+    }
+
+    nav img {
+        width: 60vw;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: rgb(250, 147, 41);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li a {
+        color: rgb(26, 23, 27);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    nav .fa {
+        display: block;
+        color: rgb(26, 23, 27);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    nav {
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+    }
+
+    nav img {
+        width: 60vw;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: rgb(250, 147, 41);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li a {
+        color: rgb(26, 23, 27);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    nav .fa {
+        display: block;
+        color: rgb(26, 23, 27);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {}
+
+
+
+
+/* ==========================================================================
+                                HEADER
+   ========================================================================== */
+
+.header {
+    height: 95vh;
+    width: 100%;
+    /* background-color: white; */
+    /* background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(img/banner.png); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    width: 90%;
+    color: rgb(0, 83, 155);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 5vw;
+}
+
+.text-box p {
+    margin: 3vw 0 3vw;
+    font-size: 3vw;
+    color: rgb(0, 83, 155);
+}
+
+.header .row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .blog-right, .blog-left {
+    height: auto;
+}
+
+.header .blog-left {
+    flex-basis: 30%;
+    padding-left: 5%;
+}
+
+.header .blog-left img {
+    /* max-width: 100%;
+    width: auto; */
+    width: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(26, 23, 27);
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5)) grayscale(25%);
+}
+
+.header .blog-right {
+    flex-basis: 70%;
+    padding-right: 5%;
+    margin: auto;
+    /* width: 50%; */
+}
+
+.header .blog-right h1 {
+    text-align: center;
+    color: rgb(0, 83, 155);
+    font-size: 3vw;
+    padding: 7px 0;
+    font-weight: 700;
+}
+
+.header .blog-right h2 {
+    text-align: center;
+    color: rgb(0, 83, 155);
+    padding: 7px 0;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .header .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .header .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .header .blog-left img {
+        transform: none;
+    }
+
+    .header .blog-right h1 {
+        font-size: 8vw;
+    }
+
+    .header .blog-right h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .header {
+        height: fit-content;
+    }
+
+    .header .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .header .blog-right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .header .blog-left img {
+        transform: none;
+    }
+
+    .header .blog-right h1 {
+        font-size: 8vw;
+    }
+
+    .header .blog-right h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {}
+
+
+
+
+/* ==========================================================================
+                                SUB-HEADER
+   ========================================================================== */
+
+.sub-header {
+    /*height: auto;*/
+    height: 12vw;
+    width: 100%;
+    /* background-color: white; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .sub-header {
+        height: 25vw;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .sub-header {
+        height: 25vw;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .sub-header {
+        height: 25vw;
+    }
+}
+
+
+
+
+/* ==========================================================================
+                                SUB-SUB-HEADER
+   ========================================================================== */
+
+.sub-sub-header {
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgb(0, 83, 155);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-sub-header p {
+    font-size: 7vmin;
+    font-weight: 200;
+}
+
+.sub-sub-header hr {
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 2px;
+    border-width: 0;
+    margin-top: 10px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .sub-sub-header {
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    .sub-sub-header p {
+        font-size: 6vmin;
+    }
+
+    .sub-sub-header hr {
+        margin-top: 5px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .sub-sub-header {
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    .sub-sub-header p {
+        font-size: 6vmin;
+    }
+
+    .sub-sub-header hr {
+        margin-top: 7.5px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .sub-sub-header {
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    .sub-sub-header p {
+        font-size: 5vmin;
+    }
+
+    .sub-sub-header hr {
+        margin-top: 7.5px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+                                CONTENT-MANDAT
+   ========================================================================== */
+
+.content-mandat {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 10vh;
+}
+
+.content-mandat p {
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    color: rgb(26, 23, 27);
+}
+
+.content-mandat center {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 25px;
+    color: rgb(0, 83, 155)
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .content-mandat {
+        padding-top: 15vw;
+    }
+
+    .content-mandat p {
+        font-size: 13px;
+    }
+
+    .content-mandat center {
+        font-size: 15px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-mandat {
+        padding-top: 10vw;
+    }
+
+    .content-mandat p {
+        font-size: 14px;
+    }
+
+    .content-mandat center {
+        font-size: 16px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .content-mandat {
+        padding-top: 10vw;
+    }
+
+    .content-mandat p {
+        font-size: 15px;
+    }
+
+    .content-mandat center {
+        font-size: 17px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+                                CONTENT-LEISTUNGEN
+   ========================================================================== */
+
+.content-leistungen {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-leistungen h2 {
+    text-align: left;
+    font-weight: 500;
+    color: rgb(26, 23, 27);
+    ;
+}
+
+.content-leistungen ul {
+    padding-left: 3%;
+    margin-top: 20px;
+}
+
+.content-leistungen ul li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    ;
+    padding-bottom: 10px
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    /* .content-leistungen {
+        padding-top: 15vw;
+    } */
+
+    .content-leistungen h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .content-leistungen ul {
+        margin-top: 5px;
+    }
+
+    .content-leistungen ul li {
+        font-size: 13px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {}
+
+
+
+
+/* ==========================================================================
+                                ACCORDION
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.content-leistungen .container {
+    padding-top: 5vh;
+    padding-bottom: 12vh;
+}
+
+.content-leistungen .container h2 {
+    font-weight: 500;
+    ;
+    color: rgb(26, 23, 27);
+    ;
+    padding-left: 1em;
+}
+
+.content-leistungen .container ul {
+    padding-left: 5em;
+}
+
+.content-leistungen .accordion .accordion-item {
+    border-bottom: 1px solid rgb(0, 83, 155);
+}
+
+.content-leistungen .accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid rgb(0, 83, 155);
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: rgb(26, 23, 27);
+    ;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: rgb(250, 147, 41);
+}
+
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: rgb(250, 147, 41);
+    border: 1px solid rgb(250, 147, 41);
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: rgb(0, 83, 155);
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: fit-content;
+    /* max-height: 20em; */
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    text-align: left;
+    color: rgb(26, 23, 27);
+    ;
+}
+
+.accordion .accordion-content ul li {
+    margin-left: 1%;
+}
+
+.accordion .accordion-content ul {
+    margin-bottom: 2em;
+    display: table;
+    text-align: left;
+    width: 80%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {}
+
+
+
+
+/* ==========================================================================
+                                CONTENT-KOOPERATION
+   ========================================================================== */
+
+.content-kooperation {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 15vh;
+}
+
+.content-kooperation p {
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    color: rgb(26, 23, 27);
+}
+
+.content-kooperation center {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 25px;
+    color: rgb(0, 83, 155);
+}
+
+
+
+
+/* ==========================================================================
+                                CONTENT-BERATER
+   ========================================================================== */
+
+.content-berater {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+}
+
+.content-berater .row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-berater .blog-left {
+    flex-basis: 50%;
+}
+
+.content-berater .blog-right {
+    flex-basis: 50%;
+    padding-right: 5%;
+}
+
+.content-berater .blog-right, .blog-left {
+    height: auto;
+}
+
+.content-berater .blog-left img {
+    width: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-berater .blog-right h2 {
+    text-align: left;
+    color: rgb(0, 83, 155);
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-berater .blog-right p {
+    text-align: left;
+    color: rgb(0, 83, 155);
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-berater .blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(26, 23, 27);
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.content-berater .mitarbeiter{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-berater .mitarbeiter p {
+    text-align: left;
+    font-weight: 600;
+    color: rgb(26, 23, 27);
+    padding-top: 12vh;
+}
+
+.content-berater .mitarbeiter ul {
+    padding-left: 3%;
+    margin-top: 20px;
+}
+
+.content-berater .mitarbeiter ul li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    padding-bottom: 10px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .content-berater .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .content-berater .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .content-berater .blog-left img {
+        transform: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-berater .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .content-berater .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .content-berater .blog-left img {
+        transform: none;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {}
+
+
+
+
+/* ==========================================================================
+                                CONTENT-MITARBEITER
+   ========================================================================== */
+
+.content-mitarbeiter {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+}
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+/* * {
+    box-sizing: border-box;
+  } */
+
+/* body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+  } */
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+}
+
+.card {
+    position: relative;
+    display: block;
+    height: 100%;
+    /* border-radius: calc(var(--curve) * 1px); */
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card__image {
+    width: 80%;
+    height: auto;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* border-radius: calc(var(--curve) * 1px);     */
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    /* border-radius: calc(var(--curve) * 1px) 0 0 0;     */
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+/* .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }        */
+
+.card:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+                            CONTENT-KONTAKT
+========================================================================== */
+
+.content-kontakt {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+}
+
+.content-kontakt .row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-kontakt .blog-left {
+    flex-basis: 50%;
+    color: rgb(26, 23, 27);
+}
+
+#googleMapAccept {
+    position:relative;
+    /* border:solid 1px #000; */
+    width: 80%;
+    height:22px;
+    left: 10%;
+    top: -50%;
+    /* font-size: 5vw; */
+}
+
+#googleMapAccept.hidden {
+    opacity: 0;
+    /* position:absolute; */
+    /* z-index:-1; */
+    display: none;
+}
+
+#googleMapIFrame{
+/* .content-kontakt .blog-left iframe { */
+    display: 'flexbox';
+    /* position:absolute;
+    z-index:-1; */
+    width: 80%;
+    background-color: lightgrey;
+}
+
+.content-kontakt .blog-right {
+    flex-basis: 50%;
+    padding-right: 5%;
+}
+
+.content-kontakt .blog-right h2 {
+    text-align: left;
+    color: rgb(0, 83, 155);
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-kontakt .blog-right p {
+    text-align: left;
+    color: rgb(0, 83, 155);
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content-kontakt .blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(26, 23, 27);
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .content-kontakt .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    #googleMapAccept {
+        position: relative;
+        transform: translateY(-1200%);
+    }
+
+    .content-kontakt .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-kontakt .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    #googleMapAccept {
+        position: relative;
+        transform: translateY(-1200%);
+    }
+
+    .content-kontakt .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .content-kontakt .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    #googleMapAccept {
+        position: relative;
+        transform: translateY(-1200%);
+    }
+
+    .content-kontakt .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+                            CONTENT-IMPRESSUM
+========================================================================== */
+
+.content-impressum {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+}
+
+.content-impressum p {
+    width: 96%;
+    padding-left: 2%;
+    text-align: left;
+    color: rgb(26, 23, 27);
+    font-size: 13px;
+}
+
+.content-impressum hr {
+    width: 96%;
+    margin-left: 2%;
+    background-color: rgb(112, 113, 115);
+    height: 2px;
+    border-width: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.content-impressum ul {
+    margin: 0;
+    width: 96%;
+}
+
+.content-impressum ul.dashed {
+    list-style-type: none;
+}
+
+.content-impressum ul.dashed>li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    padding-left: 3%;
+}
+
+.content-impressum ul.dashed>li:before {
+    content: "-";
+}
+
+.content-impressum li span {
+    position: relative;
+    left: 15px;
+    font-size: 13px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .content-impressum p {
+        font-size: 10px;
+    }
+
+    .content-impressum ul.dashed>li {
+        font-size: 10px;
+    }
+
+    .content-impressum li span {
+        position: relative;
+        left: 2px;
+        font-size: 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-impressum p {
+        font-size: 11px;
+    }
+
+    .content-impressum ul.dashed>li {
+        font-size: 11px;
+    }
+
+    .content-impressum li span {
+        position: relative;
+        left: 3px;
+        font-size: 11px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .content-impressum p {
+        font-size: 12px;
+    }
+
+    .content-impressum ul.dashed>li {
+        font-size: 12px;
+    }
+
+    .content-impressum li span {
+        position: relative;
+        left: 4px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+                            CONTENT-DATENSCHUTZ
+========================================================================== */
+
+.content-datenschutz {
+    min-height: 77vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 5vh;
+}
+
+.content-datenschutz p {
+    width: 96%;
+    padding-left: 2%;
+    text-align: left;
+    color: rgb(26, 23, 27);
+    font-size: 13px;
+}
+
+.content-datenschutz ul {
+    margin: 0;
+    width: 96%;
+}
+
+.content-datenschutz ul.dashed {
+    list-style-type: none;
+}
+
+.content-datenschutz ul.dashed>li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    padding-left: 3%;
+}
+
+.content-datenschutz ul.dashed>li:before {
+    content: "-";
+}
+
+.content-datenschutz li span {
+    position: relative;
+    left: 15px;
+    font-size: 13px;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .content-datenschutz p {
+        font-size: 10px;
+    }
+
+    .content-datenschutz ul.dashed>li {
+        font-size: 10px;
+    }
+
+    .content-datenschutz li span {
+        position: relative;
+        left: 2px;
+        font-size: 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-datenschutz p {
+        font-size: 11px;
+    }
+
+    .content-datenschutz ul.dashed>li {
+        font-size: 11px;
+    }
+
+    .content-datenschutz li span {
+        position: relative;
+        left: 3px;
+        font-size: 11px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .content-datenschutz p {
+        font-size: 12px;
+    }
+
+    .content-datenschutz ul.dashed>li {
+        font-size: 12px;
+    }
+
+    .content-datenschutz li span {
+        position: relative;
+        left: 4px;
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================================================
+                                FOOTER
+   ========================================================================== */
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    /* padding: 2vh 0; */
+    background-color: rgb(0, 83, 155);
+}
+
+.footer .footer-link {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer .footer-link a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 2vw;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .footer {
+        padding: 2vw 0;
+    }
+
+    .footer .footer-link a {
+        font-size: 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+    .footer {
+        padding: 2vw 0;
+    }
+
+    .footer .footer-link a {
+        font-size: 11px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979px) {
+    .footer {
+        padding: 2vw 0;
+    }
+
+    .footer .footer-link a {
+        font-size: 12px;
+    }
+}

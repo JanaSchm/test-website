@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanzlei Knoll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ----- SECTION: sub-header ----- -->
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html">
+                <img src="img/logo-1014.jpg" width="250"
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, 425px"
+                    srcset="img/logo-500.jpg 500w, img/logo-1014.jpg 1014w" alt="" class="logo-image" />
+            </a> -->
+            <a href="index.html">
+                <img src="img/logo_croped.svg" width="250"
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, 425px"
+                    srcset="img/logo_croped.svg 500w, img/logo_croped.svg 1014w" alt="" class="logo-image" />
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="mandat.html">MANDAT</a></li>
+                    <li><a href="leistungen.html">LEISTUNGEN</a></li>
+                    <li><a href="kooperation.html">KOOPERATION</a></li>
+                    <li><a href="berater.html">BERATER</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- ----- SECTION: sub-sub-header ----- -->
+    <section class="sub-sub-header">
+        <p>KONTAKT</p>
+        <hr>
+    </section>
+
+    <!-- ----- SECTION: content ----- -->
+    <section class="content-kontakt">
+        <div class="row">
+            <div class="blog-left">
+                <iframe id="googleMapIFrame" width="600" height="450" style="border:0;" allowfullscreen=""
+                    loading="lazy"></iframe>
+
+                <div id="googleMapAccept">
+                    Mit dem <a id="googleMapAcceptButton" href="#">Laden der Karte</a> akzeptieren Sie die <a
+                        href="https://policies.google.com/privacy?hl=de" target="_blank">Datenschutzbestimmungen von
+                        Google Maps</a> sowie die <a href="https://www.google.com/intl/de_DE/help/terms_maps/" target="_blank">zus&auml;tzlichen Nutzungsbedingungen f&uuml;r Google Maps/Google Earth</a>.  
+                    <!-- <button id="googleMapAcceptButton">Mit dem Laden der Karte akzeptieren Sie die die <a href="https://policies.google.com/privacy?hl=de" target="_blank">Datenschutzbestimmungen von Google Maps</a></button> -->
+                </div>
+            </div>
+            <div class="blog-right">
+                <h2> Fragen, Beratung, weitere Informationen </h2>
+                <p> Nehmen Sie unverbindlich Kontakt mit mir auf - per Telefon, Telefax oder E-Mail</p>
+                <div>
+                    Dipl.-Kfm. (Univ.) Andreas Knoll
+                </div>
+                <div>
+                    Wirtschaftspr&uumlfer - Steuerberater
+                </div>
+                <br>
+                <div>
+                    Franz-Kobinger-Str. 11a
+                </div>
+                <div>
+                    86157 Augsburg
+                </div>
+                <br>
+                <div>
+                    Telefon: (0821) 2 52 90 - 0
+                </div>
+                <div>
+                    Telefax: (0821) 2 52 90 - 90
+                </div>
+                <div>
+                    Email: info@kanzleiknoll.de
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----- SECTION: Footer ----- -->
+    <section class="footer">
+        <div class="footer-link">
+            <a href="impressum.html">Impressum</a>
+            <!-- |  -->
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </section>
+
+
+    <script src="googleMaps.js"></script>
+
+
+    <!-- ----- JavaScript for Toggle Menu ----- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

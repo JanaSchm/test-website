@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanzlei Knoll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ----- SECTION: sub-header ----- -->
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html">
+                <img src="img/logo-1014.jpg" width="250"
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, 425px"
+                    srcset="img/logo-500.jpg 500w, img/logo-1014.jpg 1014w" alt="" class="logo-image" />
+            </a> -->
+            <a href="index.html">
+                <img src="img/logo_croped.svg" width="250"
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, 425px"
+                    srcset="img/logo_croped.svg 500w, img/logo_croped.svg 1014w" alt="" class="logo-image" />
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="mandat.html">MANDAT</a></li>
+                    <li><a href="leistungen.html">LEISTUNGEN</a></li>
+                    <li><a href="kooperation.html">KOOPERATION</a></li>
+                    <li><a href="berater.html">BERATER</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+    <!-- ----- SECTION: sub-sub-header ----- -->
+    <section class="sub-sub-header">
+        <p>MANDAT</p>
+        <hr>
+    </section>
+
+
+    <!-- ----- SECTION: content ----- -->
+    <section class="content-mandat">
+        <p>
+            <b>Bei mir stehen Sie im Mittelpunkt</b>
+            <br>
+            <br>
+            Als Wirtschaftspr&uumlfer und Steuerberater engagiere ich mich f&uumlr Sie - sowohl f&uumlr die
+            Bed&uumlrfnisse von Unternehmen aller Rechtsformen als auch f&uumlr Sie als Privatperson. Dabei stehen Sie
+            als mein Mandant im Mittelpunkt meiner T&aumltigkeit und Sie erhalten von mir eine umfassende individuelle
+            Betreuung. Ich nehme mir die Zeit f&uumlr eine tiefgreifende Analyse. Daf&uumlr garantiere ich nicht nur mit
+            hoher fachlicher, sondern auch mit meiner menschlichen Kompetenz.
+            <br>
+            <br>
+            Deshalb pflege ich f&uumlr die Zusammenarbeit die pers&oumlnlich gepr&aumlgte Partnerschaft: In meiner
+            Kanzlei haben Sie einen festen Ansprechpartner Ihres Vertrauens, denn ich m&oumlchte, dass Sie sich als mein
+            Mandant wohl f&uumlhlen - in Ihren Entscheidungen und in jedem Kontakt mit mir und meinem Team.
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>Individuelle L&oumlsungen - auf Ihre Bed&uumlrfnisse zugeschnitten</b>
+            <br>
+            <br>
+            Die Struktur meiner Kanzlei erlaubt eine universelle und kontinuierliche Beratung. Sie erhalten steuer- und
+            wirtschaftsberatende Leistungen geb&uumlndelt aus einer Hand. F&uumlr Ihre fach&uumlbergreifende Beratung -
+            z.B. bei einem Unternehmenskauf oder -verkauf sowie bei Nachfolgeregelungen - kooperiere ich mit einem
+            Netzwerk von Experten, um Sie bestm&oumlglich zu unterst&uumltzen und Ihnen so gezielte Entscheidungshilfen
+            f&uumlr Ihren Erfolg zu geben.
+            <br>
+            <br>
+            Neben der fachlichen Kompetenz profitieren Sie auch von meiner langj&aumlhrigen Erfahrung und meinen
+            Kontakten. Bei komplexen Aufgabenstellungen arbeite ich mit Rechtsanw&aumllten und weiteren Spezialisten
+            zusammen, um Ihnen sowohl in Verm&oumlgens- und Finanzierungsfragen als auch bei sonstigen Anliegen
+            individuelle, ma&szliggeschneiderte L&oumlsungen aufzuzeigen.
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <center>
+            Nutzen Sie den kurzen, unmittelbaren Weg. Lernen Sie mich pers&oumlnlich kennen.
+            <br>
+            <br>
+            Ich freue mich auf Sie.
+        </center>
+    </section>
+
+
+    <!-- ----- SECTION: Footer ----- -->
+    <section class="footer">
+        <div class="footer-link">
+            <a href="impressum.html">Impressum</a>
+            <!-- |  -->
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </section>
+
+
+
+    <!-- ----- JavaScript for Toggle Menu ----- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

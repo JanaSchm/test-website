@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanzlei Knoll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ----- SECTION: header ----- -->
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo_croped.svg" width="250"
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, 425px"
+                    srcset="img/logo_croped.svg 500w, img/logo_croped.svg 1014w" alt="" class="logo-image" />
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="mandat.html">MANDAT</a></li>
+                    <li><a href="leistungen.html">LEISTUNGEN</a></li>
+                    <li><a href="kooperation.html">KOOPERATION</a></li>
+                    <li><a href="berater.html">BERATER</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/inhaber_begruessung_croped_2.jpg">
+            </div>
+            <div class="blog-right">
+                <h2> Willkommen bei der</h2>
+                <h1>Kanzlei Knoll</h1>
+                <h2>Wirtschaftspr&uumlfer und Steuerberater</h2>
+                <h2>Ihr pers&oumlnlicher Berater im Pfersee-Park in Augsburg</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----- SECTION: Footer ----- -->
+    <section class="footer">
+        <div class="footer-link">
+            <a href="impressum.html">Impressum</a>
+            <!-- |  -->
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </section>
+
+
+    <!-- ----- Cookie Banner ----- -->
+    <div id="consent-popup" class="hidden">
+        <div class="cookie-consent-banner__inner">
+            <div class="cookie-consent-banner__copy">
+                <div class="cookie-consent-banner__header">Diese Website verwendet Cookies</div>
+                <div class="cookie-consent-banner__description">Wir verwenden Cookies, um unsere Website und unseren Service zu optimieren.
+                Weitere Informationen finden Sie unter <a href="datenschutz.html">Datenschutzerkl&aumlrung</a> und <a href="impressum.html">Impressum</a>.
+                </div>
+            </div>
+
+            <div class="cookie-consent-banner__actions">
+                <a id="accept" href="#" class="cookie-consent-banner__cta">
+                    OK
+                </a>
+
+                <!-- <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+                    Decline
+                </a> -->
+            </div>
+        </div>
+    </div>
+    <script src="cookieBanner.js"></script> 
+
+
+    <!-- ----- JavaScript for Toggle Menu ----- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
