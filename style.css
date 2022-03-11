@@ -12,62 +12,62 @@
                                 Cookie Banner
    ========================================================================== */
 
-  #consent-popup {
+#consent-popup {
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 2147483645;
     box-sizing: border-box;
     width: 100%;
-  
-    background-color: rgb(0, 83, 155);
-  }
 
-  #consent-popup.hidden {
-      /* opacity: 0; */
-      /* position:absolute; */
-      /* z-index:-1; */
-      display: none;
-  }
-  
-  .cookie-consent-banner__inner {     
+    background-color: rgb(0, 83, 155);
+}
+
+#consent-popup.hidden {
+    /* opacity: 0; */
+    /* position:absolute; */
+    /* z-index:-1; */
+    display: none;
+}
+
+.cookie-consent-banner__inner {
     max-width: 90%;
     margin: 0 auto;
     padding: 32px 0;
-  }
-  
-  .cookie-consent-banner__copy { 
+}
+
+.cookie-consent-banner__copy {
     margin-bottom: 16px;
-  }
-  
-  .cookie-consent-banner__header {
+}
+
+.cookie-consent-banner__header {
     margin-bottom: 8px;
-    
+
     font-family: tahoma;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: white;
-  }
-  
-  .cookie-consent-banner__description {
+}
+
+.cookie-consent-banner__description {
     font-family: tahoma;
     font-weight: normal;
     color: #838F93;
     font-size: 16px;
     line-height: 24px;
-  }
-  
-  .cookie-consent-banner__cta {
+}
+
+.cookie-consent-banner__cta {
     box-sizing: border-box;
     display: inline-block;
     min-width: 164px;
     padding: 11px 13px;
-      
+
     border-radius: 2px;
-    
+
     background-color: rgb(250, 147, 41);
-     
+
     color: #FFF;
     text-decoration: none;
     text-align: center;
@@ -75,9 +75,9 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-  }
-  
-  /* .cookie-consent-banner__cta--secondary { 
+}
+
+/* .cookie-consent-banner__cta--secondary { 
     padding: 9px 13px;
     
     border: 2px solid #3A4649;
@@ -86,26 +86,26 @@
     
     color: rgb(250, 147, 41);
   } */
-  
-  .cookie-consent-banner__cta:hover {
+
+.cookie-consent-banner__cta:hover {
     background-color: rgb(250, 147, 41);
-  }
-  
-  /* .cookie-consent-banner__cta--secondary:hover {
+}
+
+/* .cookie-consent-banner__cta--secondary:hover {
     border-color: #838F93;
       
     background-color: transparent;
     
     color: rgb(250, 147, 41);
   } */
-  
-  .cookie-consent-banner__cta:last-child {
-    margin-left: 16px;
-  }
 
-  .cookie-consent-banner__copy a {
-      color: inherit;
-  }
+.cookie-consent-banner__cta:last-child {
+    margin-left: 16px;
+}
+
+.cookie-consent-banner__copy a {
+    color: inherit;
+}
 
 
 
@@ -686,6 +686,39 @@ nav .fa {
 
 
 /* ==========================================================================
+                                CONTENT-PHILOSOPHIE
+   ========================================================================== */
+
+
+.content-philosophie .philosophie {
+    height: calc(99vh - (5vh + 12vw + 25px + 20px + 7vmin + 2px + 10px));
+    ;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-philosophie .philosophie p {
+    text-align: left;
+    font-weight: 600;
+    color: rgb(26, 23, 27);
+    padding-top: 12vh;
+}
+
+.content-philosophie .philosophie ul {
+    padding-left: 3%;
+    margin-top: 20px;
+}
+
+.content-philosophie .philosophie ul li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    padding-bottom: 10px;
+}
+
+
+
+/* ==========================================================================
                                 ACCORDION
    ========================================================================== */
 
@@ -848,7 +881,10 @@ nav .fa {
    ========================================================================== */
 
 .content-kooperation {
-    min-height: 77vh;
+    /* min-height: 77vh; */
+    height: calc(99vh - (5vh + 12vw + 25px + 20px + 7vmin + 2px + 10px));
+    /* height: 100%; calc(100% - (10px)); */
+    /* height: 100vh; */
     width: 100%;
     background-color: white;
     background-position: center;
@@ -943,29 +979,6 @@ nav .fa {
     box-sizing: border-box;
 }
 
-.content-berater .mitarbeiter{
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.content-berater .mitarbeiter p {
-    text-align: left;
-    font-weight: 600;
-    color: rgb(26, 23, 27);
-    padding-top: 12vh;
-}
-
-.content-berater .mitarbeiter ul {
-    padding-left: 3%;
-    margin-top: 20px;
-}
-
-.content-berater .mitarbeiter ul li {
-    text-align: left;
-    color: rgb(26, 23, 27);
-    padding-bottom: 10px;
-}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -1004,6 +1017,41 @@ nav .fa {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 767px) and (max-width: 979px) {}
 
+
+
+
+
+
+/* ==========================================================================
+                                CONTENT-TEAM
+   ========================================================================== */
+
+
+.content-team .mitarbeiter {
+    height: calc(99vh - (5vh + 12vw + 25px + 20px + 7vmin + 2px + 10px));
+    ;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-team .mitarbeiter p {
+    text-align: left;
+    font-weight: 600;
+    color: rgb(26, 23, 27);
+    padding-top: 12vh;
+}
+
+.content-team .mitarbeiter ul {
+    padding-left: 3%;
+    margin-top: 20px;
+}
+
+.content-team .mitarbeiter ul li {
+    text-align: left;
+    color: rgb(26, 23, 27);
+    padding-bottom: 10px;
+}
 
 
 
@@ -1173,10 +1221,10 @@ nav .fa {
 }
 
 #googleMapAccept {
-    position:relative;
+    position: relative;
     /* border:solid 1px #000; */
     width: 80%;
-    height:22px;
+    height: 22px;
     left: 10%;
     top: -50%;
     /* font-size: 5vw; */
@@ -1189,8 +1237,8 @@ nav .fa {
     display: none;
 }
 
-#googleMapIFrame{
-/* .content-kontakt .blog-left iframe { */
+#googleMapIFrame {
+    /* .content-kontakt .blog-left iframe { */
     display: 'flexbox';
     /* position:absolute;
     z-index:-1; */
