@@ -138,7 +138,7 @@ nav img {
     width: 100%;
 }
 
-nav .fa {
+nav .fa-solid {
     display: none;
 }
 
@@ -178,7 +178,7 @@ nav .fa {
         font-size: 15px;
     }
 
-    nav .fa {
+    nav .fa-solid {
         display: block;
         color: rgb(0, 83, 155);
         margin: 10px;
@@ -227,7 +227,7 @@ nav .fa {
         font-size: 15px;
     }
 
-    nav .fa {
+    nav .fa-solid {
         display: block;
         color: rgb(0, 83, 155);
         margin: 10px;
@@ -1362,8 +1362,6 @@ nav .fa {
         font-size: 12px;
     }
 }
-
-
 
 
 /* ==========================================================================
