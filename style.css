@@ -336,9 +336,9 @@ nav .fa-solid {
 /* Landscape phones and down */
 @media (max-width: 480px) {
     .header {
-        height: auto;
+        /* height: auto; */
     }
-    
+
     .header .row {
         flex-direction: column;
         font-size: 13px;
@@ -429,7 +429,7 @@ nav .fa-solid {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 767px) and (max-width: 979px) {
     .sub-header {
-        height: 25vw;
+        height: 12vw;
     }
 }
 
@@ -522,7 +522,8 @@ nav .fa-solid {
    ========================================================================== */
 
 .content-mandat {
-    min-height: 77vh;
+    /* min-height: 77vh; */
+    min-height: calc(99vh - (5vh + 12vw + 25px + 20px + 7vmin + 2px + 10px));
     width: 100%;
     background-color: white;
     background-position: center;
@@ -580,6 +581,7 @@ nav .fa-solid {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 767px) and (max-width: 979px) {
     .content-mandat {
+        min-height: calc(100vh - (12vw + 20px + 15px + 5vmin + 2px + 7.5px + 5vh));
         padding-top: 10vw;
     }
 
@@ -600,7 +602,8 @@ nav .fa-solid {
    ========================================================================== */
 
 .content-leistungen {
-    min-height: 77vh;
+    min-height: calc(99vh - (5vh + 12vw + 25px + 20px + 7vmin + 2px + 10px));
+    /* min-height: 77vh; */
     width: 100%;
     background-color: white;
     background-position: center;
