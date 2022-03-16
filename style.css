@@ -335,6 +335,10 @@ nav .fa-solid {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .header {
+        height: auto;
+    }
+    
     .header .row {
         flex-direction: column;
         font-size: 13px;
@@ -445,7 +449,7 @@ nav .fa-solid {
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: rgb(250, 147, 41);
+    color: white;
 }
 
 .sub-sub-header p {
@@ -456,7 +460,7 @@ nav .fa-solid {
 .sub-sub-header hr {
     width: 40%;
     margin-left: 30%;
-    background-color: rgba(250, 147, 41, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     height: 2px;
     border-width: 0;
     margin-top: 10px;
@@ -1382,7 +1386,7 @@ nav .fa-solid {
 }
 
 .footer .footer-link a {
-    color: rgb(250, 147, 41);
+    color: white;
     font-size: 15px;
     text-decoration: none;
     padding-left: 2vw;
