@@ -349,16 +349,21 @@ nav .fa-solid {
         padding-left: 10px;
     }
 
+    .header .blog-left{
+        padding-left: 0%;
+    }
+
     .header .blog-left img {
         transform: none;
+        width: 40%;
     }
 
     .header .blog-right h1 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .header .blog-right h2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
@@ -379,16 +384,21 @@ nav .fa-solid {
         padding-left: 10px;
     }
 
+    .header .blog-left{
+        padding-left: 0%;
+    }
+
     .header .blog-left img {
         transform: none;
+        width: 30%;
     }
 
     .header .blog-right h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .header .blog-right h2 {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 }
 
@@ -396,6 +406,35 @@ nav .fa-solid {
 @media (min-width: 767px) and (max-width: 979px) {
     .header {
         height: fit-content;
+    }
+
+    .header .row {
+        flex-direction: column;
+        font-size: 13px;
+        margin-top: 15%;
+    }
+
+    .header .blog-right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .header .blog-left{
+        padding-left: 0%;
+    }
+
+    .header .blog-left img {
+        transform: none;
+        width: 30%;
+    }
+
+    .header .blog-right h1 {
+        font-size: 6vw;
+    }
+
+    .header .blog-right h2 {
+        font-size: 3vw;
     }
 }
 
@@ -571,7 +610,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-mandat {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
         padding-top: 10vw;
     }
 
@@ -664,7 +703,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-leistungen {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
 }
 
@@ -725,8 +764,8 @@ nav .fa-solid {
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
-    .content-philosophie {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+    .content-philosophie .philosophie{
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
 
     .content-philosophie p, ul {
@@ -980,7 +1019,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-kooperation {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
 
     .content-kooperation p {
@@ -1112,7 +1151,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-berater {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
     .content-berater .row {
         flex-direction: column;
@@ -1147,8 +1186,19 @@ nav .fa-solid {
         min-height: calc(100vh - (12vw + 20px + 15px + 5vmin + 2px + 7.5px + 5vh));
     }
 
+    .content-berater .row {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
     .content-berater .blog-right {
+        padding-top: 20px;
+        padding-left: 10px;
         font-size: 15px;
+    }
+
+    .content-berater .blog-left img {
+        transform: none;
     }
 
     .content-berater .blog-right h2 {
@@ -1208,8 +1258,8 @@ nav .fa-solid {
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
-    .content-team {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+    .content-team .mitarbeiter{
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
     .content-team .mitarbeiter p {
         font-size: 16px;
@@ -1222,7 +1272,7 @@ nav .fa-solid {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 767px) and (max-width: 979px) {
 
-    .content-team {
+    .content-team .mitarbeiter{
         min-height: calc(100vh - (12vw + 20px + 15px + 5vmin + 2px + 7.5px + 5vh));
     }
 
@@ -1336,7 +1386,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-kontakt {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
     .content-kontakt .row {
         flex-direction: column;
@@ -1461,7 +1511,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-impressum {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
     .content-impressum p {
         font-size: 11px;
@@ -1575,7 +1625,7 @@ nav .fa-solid {
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 767px) {
     .content-datenschutz {
-        min-height: calc(100vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
+        min-height: calc(99vh - (25vw + 20px + 15px + 6vmin + 2px + 7.5px + 2vw + 2vw + 11px));
     }
     .content-datenschutz p {
         font-size: 11px;
