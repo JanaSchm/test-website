@@ -254,7 +254,7 @@ nav .fa-solid {
 .header {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background-compressed.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -448,7 +448,7 @@ nav .fa-solid {
 .sub-header {
     height: 12vw;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/background-compressed.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
